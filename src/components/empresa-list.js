@@ -1,27 +1,23 @@
 import React from "react";
-import { Card } from "@material-ui/core";
-import EmpresaCard from "./empresa-card";
+import MaterialTableDemo from "./table";
 
 export default function EmpresaList({ empresas, deleteEmpresa }) {
-  //percorrendo todos os registros recebidos nas props
-  //e criando um Card para cada contato
-  const cards = () => {
-    return empresas.map((empresa) => {
-      return (
-        //atribuindo a um novo Card o contato
-        <EmpresaCard
-          key={empresa.id}
-          empresa={empresa}
-          deleteEmpresa={deleteEmpresa}
-        />
-      );
-    });
-  };
+  const title = "Empresa";
+  const columns = [
+    { title: "Código", field: "id" },
+    { title: "Razão Social", field: "razaoSocial" },
+    { title: "Nome Fantasia", field: "nomeFantasia" },
+    { title: "CNPJ", field: "cnpj" },
+    { title: "Inscrição Estadual", field: "inscricaoEstadual" },
+    { title: "Telefone", field: "telefone" },
+  ];
 
   return (
-    <Card>
-      {/* renderizando a funciton para formar a lista */}
-      {cards()}
-    </Card>
+    <MaterialTableDemo
+      title={title}
+      columns={columns}
+      data={empresas}
+      del={deleteEmpresa}
+    />
   );
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
     "@rematch/core": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,6 +12,7 @@
     "axios": "^0.19.2",
     "formik": "^2.1.4",
     "lodash": "^4.17.15",
+    "material-table": "^1.57.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",

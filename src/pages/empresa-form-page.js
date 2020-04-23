@@ -19,7 +19,7 @@ class EmpresaFormPage extends Component {
 
   //verificando como está o redirect para definir o encaminhamento
   render() {
-    //caso permaneça nessa page, vai ser criado o EmpresaFotm com as devidas props
+    //caso permaneça nessa page, vai ser criado o EmpresaForm com as devidas props
     return (
       <div>
         {this.props.redirect ? (

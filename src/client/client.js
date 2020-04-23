@@ -8,6 +8,6 @@ export const client = axios.create({
   baseURL: url,
   headers: {
     "Content-Type": "application/json",
-    Authorization: `Bearer b0735a3f-cf73-444b-afbb-1af9adabfe5c`,
+    Authorization: `Bearer 4d12f55f-4af3-49a5-873b-c72a4980c4b8`,
   },
 });

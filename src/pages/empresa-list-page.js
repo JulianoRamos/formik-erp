@@ -15,13 +15,10 @@ class EmpresaListPage extends Component {
   //propriedade para ele juntamente com a função de deletar contato
   render() {
     return (
-      <div>
-        <h1>List of Empresa</h1>
-        <EmpresaList
-          empresas={this.props.empresas}
-          deleteEmpresa={this.props.deleteEmpresa}
-        />
-      </div>
+      <EmpresaList
+        empresas={this.props.empresas}
+        deleteEmpresa={this.props.deleteEmpresa}
+      />
     );
   }
 }

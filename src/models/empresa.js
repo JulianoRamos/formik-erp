@@ -134,8 +134,7 @@ const empresa = {
     },
 
     //atualiza a lista de contatos da aplicação caso o contato tenha sido deletado da API com sucesso
-    deleteEmpresaFulfiled: (state, payload) => {
-      const id = payload.id;
+    deleteEmpresaFulfiled: (state, id) => {
       return {
         ...state,
         empresas: state.empresas.filter((item) => item.id !== id),
